@@ -387,7 +387,7 @@ exports = module.exports = __webpack_require__(51)();
 exports.push([module.i, "@import url(/assets/css/font-awesome.min.css);", ""]);
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\nspan {\n    color: #3498db;\n    font-weight: bold;\n}\n\n.show-white-space {\n    white-space: pre;\n}\n\nitem .card img {\n    height: 16rem;\n}", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\n\nbody {\n    position: relative;\n}\n\nspan {\n    color: #3498db;\n    font-weight: bold;\n}\n\n.show-white-space {\n    white-space: pre;\n}\n\nitem .card img {\n    height: 16rem;\n}", ""]);
 
 // exports
 

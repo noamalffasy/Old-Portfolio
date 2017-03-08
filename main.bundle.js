@@ -368,7 +368,8 @@ var ItemComponent = (function () {
         for (var i = 0; i < this.dontshow.length; i++) {
             var name = this.dontshow[i];
             if (this.repo.name === name) {
-                this.elem.nativeElement.style.visibility = 'collapse';
+                console.log(this.elem.nativeElement);
+                this.elem.nativeElement.remove();
             }
         }
     };
@@ -535,7 +536,7 @@ module.exports = module.exports.toString();
 /***/ 533:
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n  <navbar></navbar>\n  <banner id=\"top\"></banner>\n</header>\n<div class=\"container\">\n  <category name=\"About me\" id=\"About\">\n    <p class=\"show-white-space\">Hi! My name is <span>Noam Alffasy</span>. &#13;&#10;I'm a <span>Full stack JavaScript Developer</span> and an <span>App Developer</span>.</p>\n  </category>\n  <category name=\"Projects\" id=\"Projects\"></category>\n</div>\n<footer class=\"text-center\">\n  <p class=\"copyright\">&copy;{{year}} Noam Alffasy</p>\n</footer>"
+module.exports = "<header>\n  <navbar></navbar>\n  <banner id=\"top\"></banner>\n</header>\n<div class=\"container\">\n  <category name=\"About me\" id=\"About\">\n    <p class=\"show-white-space\">Hi! My name is <span>Noam Alffasy</span>. &#13;&#10;I'm a <span>Full stack JavaScript Developer</span>.</p>\n  </category>\n  <category name=\"Projects\" id=\"Projects\"></category>\n</div>\n<footer class=\"text-center\">\n  <p class=\"copyright\">&copy;{{year}} Noam Alffasy</p>\n</footer>"
 
 /***/ }),
 
