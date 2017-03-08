@@ -27,7 +27,7 @@ var RepoService = (function () {
         this.headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]({ 'Content-Type': 'application/json' });
     }
     RepoService.prototype.getRepos = function () {
-        return this.http.get('https://api.github.com/users/noamalffasy/repos?access_token=308a9c30a19e2bb795eb9ad35754f569bfb8924b')
+        return this.http.get('https://api.github.com/users/noamalffasy/repos?access_token=f524f346a99131ba87cad9559b581c737fae7476')
             .toPromise()
             .then(function (response) { return response.json(); })
             .catch(this.handleError);
