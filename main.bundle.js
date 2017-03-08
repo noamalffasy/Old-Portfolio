@@ -350,18 +350,6 @@ var ItemComponent = (function () {
     }
     ItemComponent.prototype.ngOnInit = function () {
         this.calcHeight();
-        $('.visit').on('touchstart', function (e) {
-            var link = $(this); //preselect the link
-            if (link.hasClass('hover')) {
-                return true;
-            }
-            else {
-                link.addClass('hover');
-                $('.visit').not(this).removeClass('hover');
-                e.preventDefault();
-                return false; //extra, and to make sure the function has consistent return points
-            }
-        });
     };
     ItemComponent.prototype.calcHeight = function () {
         var visit = document.querySelector('.visit');
