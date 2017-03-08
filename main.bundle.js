@@ -451,7 +451,7 @@ exports = module.exports = __webpack_require__(51)();
 
 
 // module
-exports.push([module.i, "footer {\r\n    padding: 2rem;\r\n    background: #dedede;\r\n}\r\n\r\n.copyright {\r\n    margin: 0;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}", ""]);
+exports.push([module.i, "header {\r\n    background: #3498db;\r\n}\r\n\r\nfooter {\r\n    padding: 2rem;\r\n    background: #dedede;\r\n}\r\n\r\n.copyright {\r\n    margin: 0;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n}", ""]);
 
 // exports
 
