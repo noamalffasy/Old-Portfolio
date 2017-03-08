@@ -341,7 +341,7 @@ var ItemComponent = (function () {
     // @Input('github') githubAttr: string;
     function ItemComponent(elem) {
         this.elem = elem;
-        this.dontshow = ['ehem', 'portfolio', 'Bible'];
+        this.dontshow = ['ehem', 'portfolio', 'Bible', 'noamalffasy.github.io', 'treehouse-portfolio'];
     }
     ItemComponent.prototype.ngOnInit = function () {
         this.calcHeight();
