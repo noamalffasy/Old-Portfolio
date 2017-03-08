@@ -548,7 +548,7 @@ exports = module.exports = __webpack_require__(37)();
 
 
 // module
-exports.push([module.i, ":host {\r\n    margin-bottom: 1.5rem;\r\n}\r\n\r\n.card img {\r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.card .visit {\r\n    opacity: 0;\r\n    position: absolute;\r\n    width: 100%;\r\n    text-align: center;\r\n    background: rgba(52, 152, 219, .7);\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n.card .visit .link {\r\n    display: inline-block;\r\n}\r\n\r\n.card .visit a {\r\n    background: none;\r\n    border: 1px solid #fff;\r\n    border-radius: 4px;\r\n    padding: .5em .7em;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n.card .visit a:hover,\r\n.card .visit a:active {\r\n    background: rgba(255, 255, 255, .3);\r\n}\r\n\r\n.card .visit:hover,\r\n.card .visit:active {\r\n    opacity: 1;\r\n}", ""]);
+exports.push([module.i, ":host {\r\n    margin-bottom: 1.5rem;\r\n}\r\n\r\n.card img {\r\n    border-bottom: 1px solid #e5e5e5;\r\n}\r\n\r\n.card .visit {\r\n    opacity: 0;\r\n    position: absolute;\r\n    width: 100%;\r\n    text-align: center;\r\n    background: rgba(52, 152, 219, .7);\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n.card .visit .link {\r\n    display: inline-block;\r\n}\r\n\r\n.card .visit a {\r\n    background: none;\r\n    border: 1px solid #fff;\r\n    border-radius: 4px;\r\n    padding: .5em .7em;\r\n    -webkit-transition: all .3s;\r\n    transition: all .3s;\r\n}\r\n\r\n.card .visit a:hover,\r\n.card .visit a:focus {\r\n    background: rgba(255, 255, 255, .3);\r\n}\r\n\r\n.card .visit:hover,\r\n.card .visit:focus {\r\n    opacity: 1;\r\n}", ""]);
 
 // exports
 
@@ -618,7 +618,7 @@ module.exports = "<div #container [class]=\"name\">\n  <h1 #title>{{ name }}</h1
 /***/ 538:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"card\" (loaded)=\"calcHeight()\">\n  <div class=\"visit\">\n    <span class=\"link\"><a *ngIf=\"repo.homepage\" [href]=\"repo.homepage\" target=\"_blank\" class=\"btn btn-primary\"><i class=\"fa fa-external-link\" aria-hidden=\"true\"></i></a></span>\n    <span class=\"link\"><a [href]=\"repo.html_url\" target=\"_blank\" class=\"btn btn-primary\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a></span>\n  </div>\n  <img class=\"card-img-top\" [src]=\"getImg(repo.name)\" [alt]=\"repo.name\">\n  <div class=\"card-block\">\n    <h4 class=\"card-title\" [innerHTML]=\"getName(repo.name)\">{{repo.name}}</h4>\n    <p class=\"card-text\">\n      {{repo.description}}\n    </p>\n  </div>\n</div>"
+module.exports = "<div class=\"card\" (loaded)=\"calcHeight()\">\n  <div class=\"visit\" onclick=\"\">\n    <span class=\"link\"><a *ngIf=\"repo.homepage\" [href]=\"repo.homepage\" target=\"_blank\" class=\"btn btn-primary\"><i class=\"fa fa-external-link\" aria-hidden=\"true\"></i></a></span>\n    <span class=\"link\"><a [href]=\"repo.html_url\" target=\"_blank\" class=\"btn btn-primary\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a></span>\n  </div>\n  <img class=\"card-img-top\" [src]=\"getImg(repo.name)\" [alt]=\"repo.name\">\n  <div class=\"card-block\">\n    <h4 class=\"card-title\" [innerHTML]=\"getName(repo.name)\">{{repo.name}}</h4>\n    <p class=\"card-text\">\n      {{repo.description}}\n    </p>\n  </div>\n</div>"
 
 /***/ }),
 
