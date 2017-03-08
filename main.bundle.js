@@ -68,10 +68,10 @@ webpackEmptyContext.id = 352;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(443);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(529);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery__ = __webpack_require__(531);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_jquery__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(464);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(470);
 
 
 
@@ -123,8 +123,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'app',
-            template: __webpack_require__(533),
-            styles: [__webpack_require__(524)]
+            template: __webpack_require__(535),
+            styles: [__webpack_require__(525)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -144,10 +144,11 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(463);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__banner_banner_component__ = __webpack_require__(465);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navbar_navbar_component__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__navbar_navbar_component__ = __webpack_require__(469);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__category_category_component__ = __webpack_require__(466);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__item_item_component__ = __webpack_require__(467);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__repo_service__ = __webpack_require__(306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__loading_loading_component__ = __webpack_require__(468);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -168,6 +169,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
@@ -178,7 +180,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_5__banner_banner_component__["a" /* BannerComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__navbar_navbar_component__["a" /* NavbarComponent */],
                 __WEBPACK_IMPORTED_MODULE_7__category_category_component__["a" /* CategoryComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__item_item_component__["a" /* ItemComponent */]
+                __WEBPACK_IMPORTED_MODULE_8__item_item_component__["a" /* ItemComponent */],
+                __WEBPACK_IMPORTED_MODULE_10__loading_loading_component__["a" /* LoadingComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -220,8 +223,8 @@ var BannerComponent = (function () {
     BannerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'banner',
-            template: __webpack_require__(534),
-            styles: [__webpack_require__(525)]
+            template: __webpack_require__(536),
+            styles: [__webpack_require__(526)]
         }), 
         __metadata('design:paramtypes', [])
     ], BannerComponent);
@@ -237,7 +240,7 @@ var BannerComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__(539);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__(542);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__repo_service__ = __webpack_require__(306);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoryComponent; });
@@ -269,7 +272,6 @@ var CategoryComponent = (function () {
             .getRepos()
             .then(function (repos) {
             _this.repos = repos;
-            console.log(_this.repos);
             // this.calcHeight()
         });
     };
@@ -307,8 +309,8 @@ var CategoryComponent = (function () {
     CategoryComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'category',
-            template: __webpack_require__(535),
-            styles: [__webpack_require__(526)]
+            template: __webpack_require__(537),
+            styles: [__webpack_require__(527)]
         }), 
         __metadata('design:paramtypes', [(typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__repo_service__["a" /* RepoService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__repo_service__["a" /* RepoService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ElementRef */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === 'function' && _f) || Object])
     ], CategoryComponent);
@@ -368,7 +370,6 @@ var ItemComponent = (function () {
         for (var i = 0; i < this.dontshow.length; i++) {
             var name = this.dontshow[i];
             if (this.repo.name === name) {
-                console.log(this.elem.nativeElement);
                 this.elem.nativeElement.remove();
             }
         }
@@ -380,8 +381,8 @@ var ItemComponent = (function () {
     ItemComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'item',
-            template: __webpack_require__(536),
-            styles: [__webpack_require__(527)]
+            template: __webpack_require__(538),
+            styles: [__webpack_require__(528)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* ElementRef */]) === 'function' && _a) || Object])
     ], ItemComponent);
@@ -393,6 +394,41 @@ var ItemComponent = (function () {
 /***/ }),
 
 /***/ 468:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoadingComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var LoadingComponent = (function () {
+    function LoadingComponent() {
+    }
+    LoadingComponent.prototype.ngOnInit = function () {
+    };
+    LoadingComponent = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
+            selector: 'loading',
+            template: __webpack_require__(539),
+            styles: [__webpack_require__(529)]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], LoadingComponent);
+    return LoadingComponent;
+}());
+//# sourceMappingURL=loading.component.js.map
+
+/***/ }),
+
+/***/ 469:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -416,8 +452,8 @@ var NavbarComponent = (function () {
     NavbarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Component */])({
             selector: 'navbar',
-            template: __webpack_require__(537),
-            styles: [__webpack_require__(528)]
+            template: __webpack_require__(540),
+            styles: [__webpack_require__(530)]
         }), 
         __metadata('design:paramtypes', [])
     ], NavbarComponent);
@@ -427,7 +463,7 @@ var NavbarComponent = (function () {
 
 /***/ }),
 
-/***/ 469:
+/***/ 470:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -443,10 +479,10 @@ var environment = {
 
 /***/ }),
 
-/***/ 524:
+/***/ 525:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(51)();
+exports = module.exports = __webpack_require__(37)();
 // imports
 
 
@@ -461,10 +497,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 525:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(51)();
+exports = module.exports = __webpack_require__(37)();
 // imports
 
 
@@ -479,10 +515,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 526:
+/***/ 527:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(51)();
+exports = module.exports = __webpack_require__(37)();
 // imports
 
 
@@ -497,10 +533,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 527:
+/***/ 528:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(51)();
+exports = module.exports = __webpack_require__(37)();
 // imports
 
 
@@ -515,10 +551,28 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 528:
+/***/ 529:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(51)();
+exports = module.exports = __webpack_require__(37)();
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 530:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(37)();
 // imports
 
 
@@ -533,42 +587,49 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 533:
+/***/ 535:
 /***/ (function(module, exports) {
 
 module.exports = "<header>\n  <navbar></navbar>\n  <banner id=\"top\"></banner>\n</header>\n<div class=\"container\">\n  <category name=\"About me\" id=\"About\">\n    <p class=\"show-white-space\">Hi! My name is <span>Noam Alffasy</span>. &#13;&#10;I'm a <span>Full stack JavaScript Developer</span>.</p>\n  </category>\n  <category name=\"Projects\" id=\"Projects\"></category>\n</div>\n<footer class=\"text-center\">\n  <p class=\"copyright\">&copy;{{year}} Noam Alffasy</p>\n</footer>"
 
 /***/ }),
 
-/***/ 534:
+/***/ 536:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"jumbotron\">\n  <div class=\"container\">\n    <a href=\"https://twitter.com/noamalffasy\" title=\"@noamalffasy\">\n      <img class=\"photo rounded-circle\" src=\"/assets/img/profile.png\" />\n    </a>\n    <h1 class=\"display-3\">Noam Alffasy</h1>\n    <p class=\"lead\">Full stack JavaScript Developer &amp; App Developer</p>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ 535:
+/***/ 537:
 /***/ (function(module, exports) {
 
 module.exports = "<div #container [class]=\"name\">\n  <h1 #title>{{ name }}</h1>\n  <ng-content></ng-content>\n  <div #wrapper [hidden]=\"!isProjects\" class=\"row\">\n    <item *ngFor=\"let repo of repos\" [repo]=\"repo\" class=\"col-sm-6 col-md-4\" [hidden]=\"repo.fork\" (loaded)=\"calcHeight()\"></item>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ 536:
+/***/ 538:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"card\" (loaded)=\"calcHeight()\">\n  <div class=\"visit\">\n    <span class=\"link\"><a *ngIf=\"repo.homepage\" [href]=\"repo.homepage\" target=\"_blank\" class=\"btn btn-primary\"><i class=\"fa fa-external-link\" aria-hidden=\"true\"></i></a></span>\n    <span class=\"link\"><a [href]=\"repo.html_url\" target=\"_blank\" class=\"btn btn-primary\"><i class=\"fa fa-github\" aria-hidden=\"true\"></i></a></span>\n  </div>\n  <img class=\"card-img-top\" [src]=\"getImg(repo.name)\" [alt]=\"repo.name\">\n  <div class=\"card-block\">\n    <h4 class=\"card-title\" [innerHTML]=\"getName(repo.name)\">{{repo.name}}</h4>\n    <p class=\"card-text\">\n      {{repo.description}}\n    </p>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ 537:
+/***/ 539:
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  loading works!\n</p>\n"
+
+/***/ }),
+
+/***/ 540:
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"navbar fixed-top navbar-toggleable-md navbar-inverse\">\n  <div class=\"container\">\n    <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbar\"\n      aria-controls=\"navbar\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n    <a class=\"navbar-brand\" href=\"#\">Noam Alffasy</a>\n\n    <div class=\"collapse navbar-collapse\" id=\"navbar\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li class=\"nav-item\">\n          <a class=\"nav-link active\" href=\"#top\">Home</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#About\">About me</a>\n        </li>\n        <li class=\"nav-item\">\n          <a class=\"nav-link\" href=\"#Projects\">Projects</a>\n        </li>\n      </ul>\n    </div>\n  </div>\n</nav>"
 
 /***/ }),
 
-/***/ 812:
+/***/ 815:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(353);
@@ -576,5 +637,5 @@ module.exports = __webpack_require__(353);
 
 /***/ })
 
-},[812]);
+},[815]);
 //# sourceMappingURL=main.bundle.js.map

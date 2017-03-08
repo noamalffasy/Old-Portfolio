@@ -259,7 +259,7 @@ function updateLink(linkElement, obj) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(522);
+var content = __webpack_require__(523);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(351)(content, {});
@@ -286,7 +286,7 @@ if(false) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(523);
+var content = __webpack_require__(524);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(351)(content, {});
@@ -307,7 +307,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 51:
+/***/ 37:
 /***/ (function(module, exports) {
 
 /*
@@ -364,10 +364,10 @@ module.exports = function() {
 
 /***/ }),
 
-/***/ 522:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(51)();
+exports = module.exports = __webpack_require__(37)();
 // imports
 
 
@@ -379,10 +379,10 @@ exports.push([module.i, "/*!\n * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.
 
 /***/ }),
 
-/***/ 523:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(51)();
+exports = module.exports = __webpack_require__(37)();
 // imports
 exports.push([module.i, "@import url(/assets/css/font-awesome.min.css);", ""]);
 
@@ -394,7 +394,7 @@ exports.push([module.i, "/* You can add global styles to this file, and also imp
 
 /***/ }),
 
-/***/ 811:
+/***/ 814:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(355);
@@ -403,5 +403,5 @@ module.exports = __webpack_require__(356);
 
 /***/ })
 
-},[811]);
+},[814]);
 //# sourceMappingURL=styles.bundle.js.map
